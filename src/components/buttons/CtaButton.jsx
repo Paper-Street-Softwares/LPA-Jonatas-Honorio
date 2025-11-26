@@ -33,7 +33,7 @@ export default function CtaButton({
           justify-center
           ${colors} 
           font-normal font-secondFont px-6 py-3 rounded-lg text-lg 
-          transition-all hover:scale-105 shadow-lg gap-3 text-paragraph4
+          transition-all hover:scale-105 shadow-lg gap-3 text-paragraph3 desktop1:text-paragraph4
           min-w-[10px] 
           text-center
         `}
@@ -51,7 +51,7 @@ export default function CtaButton({
         )}
 
         <span className="relative z-10 flex items-center gap-3 capitalize">
-          {icon}
+          <span>{icon}</span>
           {label}
         </span>
       </a>
