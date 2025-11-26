@@ -29,7 +29,7 @@ export default function Footer() {
             <MotionDivDownToUp>
               <span className="inline-flex items-center rounded-full bg-darker text-lighter font-semibold text-xs px-4 py-1.5 uppercase tracking-wider ring-1 ring-inset ring-white/10">
                 <svg
-                  className="w-4 h-4 mr-1.5"
+                  className="w-6 h-6 phone2:w-4 phone2:h-4 mr-1.5"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
