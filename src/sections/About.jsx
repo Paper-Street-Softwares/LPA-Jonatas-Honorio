@@ -16,7 +16,7 @@ export default function About() {
             />
 
             <MotionDivDownToUp>
-              <div className="flex flex-col max-w-6xl gap-8 p-8 bg-white border border-gray-100 shadow-2xl md:gap-16 sm:p-12 lg:flex-row">
+              <div className="flex flex-col max-w-6xl items-center gap-8 p-8 bg-white border border-gray-100 shadow-2xl md:gap-16 sm:p-12 lg:flex-row">
                 <MotionDivDownToUp className="">
                   <div className="flex justify-center md:items-center">
                     <img
