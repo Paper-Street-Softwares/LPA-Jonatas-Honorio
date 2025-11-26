@@ -12,10 +12,10 @@ export default function Features() {
         <SectionArea>
           <div className="flex flex-col items-center mx-auto max-w-7xl ">
             <h1 className="font-mainFont text-3xl font-bold tracking-tight text-center lg:text-4xl capitalize">
-              {content.hero.texts.titulo}
+              {content.features.texts.titulo}
             </h1>
             <p className="max-w-3xl text-center mx-auto mt-6 text-lg sm:text-xl text-fontDarker/85 font-secondFont">
-              {content.hero.texts.subtitulo}
+              {content.features.texts.subtitulo}
             </p>
             <div
               className={`w-full h-px max-w-6xl mx-auto mt-6 mb-6 lg:mb-12 bg-custom-divider-lighter`}
