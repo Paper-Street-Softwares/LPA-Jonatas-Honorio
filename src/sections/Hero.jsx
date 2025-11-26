@@ -12,7 +12,7 @@ export default function Hero({ imagemFocadaBackground }) {
             alt="Imagem ilustrativa"
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-black/90 lg:bg-black/85"></div>
+          <div className="absolute inset-0 bg-black/80 lg:bg-black/75"></div>
         </div>
 
         <div

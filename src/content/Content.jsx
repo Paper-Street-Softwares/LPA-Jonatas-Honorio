@@ -6,6 +6,8 @@ import {
   Tag,
   Angry,
   FileX,
+  MapPinHouse,
+  MapPinX,
 } from "lucide-react";
 import imgLogo from "../assets/logo.webp";
 import imgHero from "../assets/hero.webp";
@@ -33,13 +35,13 @@ const content = {
       etiqueta: "⚖️ Advogado Imobiliário",
       titulo: (
         <p>
-          Problemas Imobiliários? Eu
-          <strong> Resolvo </strong>Pra Você
+          Problemas com imóveis, contratos ou locações? Eu
+          <strong> resolvo </strong>para você.
         </p>
       ),
       subtitulo:
-        "Atendo corretores, imobiliárias e compradores, oferecendo assessoria completa em contratos, análises e aquisição de imóveis, com orientação clara em cada etapa.",
-      labelBotaoPrincial: "Falar com Advogado no Whatsapp",
+        "Atendo corretores, imobiliárias, proprietários e compradores, com atuação focada em Direito Imobiliário: análise e blindagem de contratos, solução de conflitos, cancelamento de negócios abusivos e orientação clara em cada etapa da negociação ou do processo.",
+      labelBotaoPrincial: "Falar agora com o advogado no WhatsApp",
       labelBotaoSecundario: "Agendar Horário",
     },
   },
@@ -47,15 +49,17 @@ const content = {
   features: {
     texts: {
       titulo: "Cuido do seu caso com excelência",
+      subtitulo:
+        "Acompanhamento jurídico estratégico, com comunicação clara e atuação firme para resolver o que realmente importa: o seu problema imobiliário.",
       labelBotaoPrincial: "Preciso De Ajuda Com Meu Caso",
     },
     cards: [
       {
         index: 1,
-        icone: BriefcaseBusiness,
+        icone: MapPinHouse,
         titulo: "Para Corretores e Imobiliárias",
         descricao:
-          "Apoio jurídico em contratos, disputas, locações e segurança nas operações do seu negócio.",
+          "Suporte jurídico completo para o seu negócio: contratos blindados, prevenção de riscos, solução de conflitos, locações seguras e respaldo técnico para evitar prejuízos e litígios.",
         labelBotaoModal: "Saiba mais",
         textoModal: (
           <p>
@@ -68,10 +72,10 @@ const content = {
       },
       {
         index: 2,
-        icone: Angry,
+        icone: FileText,
         titulo: "Assessoria na Compra do Seu Imóvel",
         descricao:
-          "Análise completa de contratos, documentação e riscos para você comprar com total tranquilidade.",
+          "Análise minuciosa de contratos, documentos e riscos. Eu verifico tudo — da matrícula ao histórico do vendedor — para garantir que você compre com total segurança e sem surpresas futuras.",
         labelBotaoModal: "Saiba mais",
         textoModal: (
           <p>
@@ -84,10 +88,37 @@ const content = {
       },
       {
         index: 3,
-        icone: FileX,
+        icone: MapPinX,
         titulo: "Conflitos e Problemas Imobiliários",
         descricao:
-          "Ajuízo ações, resolvo impasses e te represento em disputas de locação, condomínio e contratos.",
+          "Atuo em ações judiciais, notificações e negociações envolvendo locações, condomínio, contratos, vícios, cobranças indevidas e qualquer disputa imobiliária. Defendo seus direitos com técnica e precisão.",
+        labelBotaoModal: "Saiba mais",
+        textoModal: (
+          <p>
+            A_Definir
+            <br />
+            <br />
+            A_Definir
+          </p>
+        ),
+      },
+      {
+        index: 4,
+        icone: FileX,
+        titulo: "Cancelamento de Multipropriedade, Timeshare e Cotas de Resort",
+        descricao: (
+          <p>
+            Se você comprou uma cota de multipropriedade ou “vacation club” e
+            depois descobriu que não consegue usar, que a taxa é eterna ou que
+            as promessas não foram cumpridas, eu posso te ajudar.
+            <br />
+            <br />
+            Atuo no cancelamento jurídico dessas compras, análise do contrato,
+            identificação de abusos e recuperação de valores pagos. Avalio sua
+            situação, esclareço seus direitos e indico o caminho mais rápido e
+            seguro para sair desse compromisso que virou um peso financeiro.
+          </p>
+        ),
         labelBotaoModal: "Saiba mais",
         textoModal: (
           <p>
@@ -103,7 +134,7 @@ const content = {
 
   transformacao: {
     texts: {
-      titulo: "Te Ajudo a Ter Segurança no Mundo Imobiliário",
+      titulo: "Te ajudo a ter segurança no mundo imobiliário",
       labelBotaoPrincial: "Preciso Da Ajuda De Um Advogado",
     },
     antes: {
@@ -112,17 +143,17 @@ const content = {
         {
           index: 1,
           texto:
-            "Você teme fazer um mau negócio porque não entende toda a parte jurídica.",
+            "Você teme fazer um mau negócio porque não domina os detalhes jurídicos.",
         },
         {
           index: 2,
           texto:
-            "Você tem receio de assinar contratos sem saber se estão realmente seguros.",
+            "Fica inseguro ao assinar contratos sem saber se estão realmente corretos.",
         },
         {
           index: 3,
           texto:
-            "Você sente insegurança ao comprar, vender ou alugar um imóvel sem orientação especializada.",
+            "Compra, vende ou aluga imóvel com medo de cair em armadilhas, cláusulas abusivas ou problemas documentais.",
         },
       ],
     },
@@ -133,17 +164,17 @@ const content = {
         {
           index: 1,
           texto:
-            "Você realiza todas as negociações com segurança e clareza em cada etapa.",
+            "Você negocia com segurança, sabendo exatamente o que está assinando e quais são seus direitos.",
         },
         {
           index: 2,
           texto:
-            "Tem meu apoio direto, sem precisar procurar outros profissionais para tirar dúvidas.",
+            "Conta com meu apoio direto para tirar dúvidas, revisar documentos e prevenir riscos.",
         },
         {
           index: 3,
           texto:
-            "Dorme tranquilo(a) sabendo que contratos, documentação e riscos foram analisados por um especialista.",
+            "Dorme tranquilo(a) porque contratos, documentos e riscos foram analisados por um advogado especialista em Direito Imobiliário.",
         },
       ],
     },
@@ -169,7 +200,7 @@ const content = {
         index: 1,
         texto: (
           <p>
-            Atendimento para<strong> todo o Brasil</strong>
+            Atendimento para <strong>todo o Brasil</strong>
           </p>
         ),
       },
@@ -177,8 +208,9 @@ const content = {
         index: 2,
         texto: (
           <p>
-            <strong> Analiso </strong>contratos e documentos antes de você
-            assinar qualquer coisa
+            <strong> Analiso </strong>contratos, documentos e condições da
+            negociação antes que você assine qualquer coisa, evitando prejuízos
+            e surpresas futuras.
           </p>
         ),
       },
@@ -186,7 +218,18 @@ const content = {
         index: 3,
         texto: (
           <p>
-            Respondo <strong>rápido </strong>no Whatsapp
+            <strong>Identifico </strong>riscos ocultos e cláusulas abusivas que
+            podem gerar gastos inesperados, processos ou perda patrimonial.
+          </p>
+        ),
+      },
+      {
+        index: 4,
+        texto: (
+          <p>
+            <strong>Acompanho </strong>cada etapa da negociação para garantir
+            que você faça a melhor escolha, com segurança jurídica e orientação
+            clara.
           </p>
         ),
       },
@@ -206,7 +249,12 @@ const content = {
         index: 1,
         texto: (
           <p>
-            Respondo <strong>rápido</strong> porque sei que o seu tempo importa.
+            <strong>
+              Tenho mais de 10 anos de atuação na advocacia e já conduzi mais de
+              500 processos,
+            </strong>{" "}
+            o que me permite antecipar riscos, enxergar soluções rápidas e saber
+            exatamente como proteger você em situações complexas.
           </p>
         ),
       },
@@ -214,7 +262,9 @@ const content = {
         index: 2,
         texto: (
           <p>
-            Estou sempre <strong>estudando </strong> todas as mudanças nas leis.
+            <strong>Sou pós-graduado em Direito Imobiliário, </strong> com
+            formação específica para lidar com contratos, disputas, negociações
+            e qualquer problema envolvendo imóveis.
           </p>
         ),
       },
@@ -222,8 +272,11 @@ const content = {
         index: 3,
         texto: (
           <p>
-            <strong>10 anos de experiência</strong> na Advocacia e muitos
-            clientes satisfeitos.
+            <strong>
+              Respondo rápido, porque sei que no mercado imobiliário tempo é
+              decisivo{" "}
+            </strong>
+            e cada minuto pode significar uma perda ou uma oportunidade.
           </p>
         ),
       },
@@ -231,8 +284,9 @@ const content = {
         index: 4,
         texto: (
           <p>
-            Não faço promessas falsas: Estudo seu caso e te auxilio
-            <strong> sem enrolação.</strong>
+            <strong>Não prometo o impossível: </strong> analiso o seu caso com
+            seriedade, explico o que realmente pode ser feito e conduzo tudo com
+            transparência.
           </p>
         ),
       },
@@ -240,8 +294,9 @@ const content = {
         index: 5,
         texto: (
           <p>
-            Trabalho com os sistemas <strong>mais modernos</strong> pra ser o
-            mais ágil possível.
+            <strong>Trabalho com ferramentas modernas, </strong> garantindo
+            agilidade, segurança de dados e acompanhamento profissional em cada
+            etapa.
           </p>
         ),
       },

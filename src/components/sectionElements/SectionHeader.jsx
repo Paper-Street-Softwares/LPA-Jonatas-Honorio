@@ -1,6 +1,11 @@
 import MotionDivDownToUp from "../animations/MotionDownToUp";
 
-export default function SectionHeader({ colorMode, title, marginBottom }) {
+export default function SectionHeader({
+  colorMode,
+  className,
+  title,
+  marginBottom,
+}) {
   const themes = {
     light: "text-fontLighter",
     dark: "text-fontDarker",
@@ -12,7 +17,7 @@ export default function SectionHeader({ colorMode, title, marginBottom }) {
     <>
       <MotionDivDownToUp className="lg:w-[70%]">
         <h2
-          className={`${colors} font-mainFont text-3xl font-bold tracking-tight text-center lg:text-4xl capitalize`}
+          className={`${colors} font-mainFont text-3xl font-bold tracking-tight text-center lg:text-4xl capitalize ${className}`}
         >
           {title}
         </h2>
