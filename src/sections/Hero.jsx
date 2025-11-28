@@ -5,7 +5,7 @@ import CtaButton from "../components/buttons/CtaButton";
 export default function Hero({ imagemFocadaBackground }) {
   return (
     <>
-      <div className="relative overflow-hidden bg-black">
+      <div className="relative overflow-hidden bg-black ">
         <div className="absolute inset-0 z-0">
           <img
             src={content.hero.imagens.backgroundHero}
@@ -45,7 +45,7 @@ export default function Hero({ imagemFocadaBackground }) {
             </span>
           </MotionDivDownToUp>
           <MotionDivDownToUp>
-            <h1 className="text-4xl font-medium tracking-tight capitalize sm:text-5xl lg:text-6xl font-mainFont">
+            <h1 className="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl font-mainFont">
               {content.hero.texts.titulo}
             </h1>
           </MotionDivDownToUp>

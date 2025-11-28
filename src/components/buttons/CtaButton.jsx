@@ -50,7 +50,7 @@ export default function CtaButton({
           />
         )}
 
-        <span className="relative z-10 flex items-center gap-3 capitalize">
+        <span className="relative z-10 flex items-center gap-3">
           <span>{icon}</span>
           {label}
         </span>

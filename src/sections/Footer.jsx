@@ -47,13 +47,13 @@ export default function Footer() {
             </MotionDivDownToUp>
 
             <MotionDivDownToUp>
-              <h2 className="max-w-3xl mx-auto mt-6 text-3xl text-fontLighter font-mainFont lg:text-4xl">
+              <h2 className="max-w-3xl mx-auto mt-6 text-3xl text-fontLighter font-mainFont lg:text-4xl text-center">
                 {content.footer.texts.titulo}
               </h2>
             </MotionDivDownToUp>
 
             <MotionDivDownToUp>
-              <p className="max-w-2xl mx-auto mt-4 mb-16 text-lg text-fontLighter">
+              <p className="max-w-2xl mx-auto mt-4 mb-16 text-lg text-fontLighter text-justify">
                 {content.footer.texts.subtitulo}
               </p>
             </MotionDivDownToUp>

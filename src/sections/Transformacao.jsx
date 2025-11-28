@@ -13,7 +13,7 @@ export default function Transformacao() {
           <div className="flex flex-col items-center mx-auto max-w-7xl">
             <SectionHeader
               title={content.transformacao.texts.titulo}
-              className=" normal-case"
+              className="text-center normal-case"
             />
 
             {(() => {

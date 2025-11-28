@@ -16,9 +16,9 @@ import imgBackground from "../assets/background.webp";
 
 export const infos = {
   telefone: {
-    ddd: "31",
-    primeiraParte: "99176",
-    segundaParte: "1967",
+    ddd: "83",
+    primeiraParte: "99902",
+    segundaParte: "7314",
   },
   mensagemWhatsapp:
     "Olá! Vim através do site e gostaria de tirar algumas dúvidas sobre meu caso.",
@@ -51,7 +51,7 @@ const content = {
       titulo: "Cuido do seu caso com excelência",
       subtitulo:
         "Acompanhamento jurídico estratégico, com comunicação clara e atuação firme para resolver o que realmente importa: o seu problema imobiliário.",
-      labelBotaoPrincial: "Preciso De Ajuda Com Meu Caso",
+      labelBotaoPrincial: "Preciso de ajuda com meu caso",
     },
     cards: [
       {
@@ -135,7 +135,7 @@ const content = {
   transformacao: {
     texts: {
       titulo: "Te ajudo a ter segurança no mundo imobiliário",
-      labelBotaoPrincial: "Preciso Da Ajuda De Um Advogado",
+      labelBotaoPrincial: "Preciso da ajuda de um advogado",
     },
     antes: {
       etiqueta: "ANTES",
@@ -193,7 +193,7 @@ const content = {
           <strong> seu imóvel ou seu dinheiro em risco!</strong>
         </h2>
       ),
-      labelBotaoPrincial: "Quero Resolver Agora Mesmo",
+      labelBotaoPrincial: "Quero resolver agora mesmo",
     },
     pontos: [
       {
@@ -241,8 +241,8 @@ const content = {
       imgPessoa: imgAbout,
     },
     texts: {
-      titulo: "Por Que Meus Clientes Confiam Em Mim",
-      labelBotaoPrincial: "Fale Diretamente Comigo",
+      titulo: "Por que meus clientes confiam em mim",
+      labelBotaoPrincial: "Fale diretamente comigo",
     },
     pontos: [
       {
@@ -315,7 +315,7 @@ const content = {
           seu caso
         </h2>
       ),
-      labelBotaoPrincial: "Quero Ser Atendido Agora",
+      labelBotaoPrincial: "Quero ser atendido agora",
       direitosReservados:
         "2025 • Dr. Jonatas Honorio • Todos os direitos reservados • ",
       desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
