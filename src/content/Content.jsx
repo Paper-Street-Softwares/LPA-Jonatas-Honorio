@@ -241,7 +241,7 @@ const content = {
       imgPessoa: imgAbout,
     },
     texts: {
-      titulo: "Por Que Meus Clientes Confiam Em Mim",
+      titulo: "Por que meus clientes confiam em mim",
       labelBotaoPrincial: "Fale Diretamente Comigo",
     },
     pontos: [

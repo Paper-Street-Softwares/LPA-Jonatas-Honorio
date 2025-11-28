@@ -17,7 +17,7 @@ export default function SectionHeader({
     <>
       <MotionDivDownToUp className="lg:w-[70%]">
         <h2
-          className={`${colors} font-mainFont text-3xl font-bold tracking-tight text-center lg:text-4xl capitalize ${className}`}
+          className={`${colors} font-mainFont text-3xl font-bold tracking-tight text-center lg:text-4xl ${className}`}
         >
           {title}
         </h2>

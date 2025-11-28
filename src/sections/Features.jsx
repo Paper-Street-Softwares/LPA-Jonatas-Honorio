@@ -11,7 +11,7 @@ export default function Features() {
       <div className="bg-neutral-100">
         <SectionArea>
           <div className="flex flex-col items-center mx-auto max-w-7xl ">
-            <h1 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center capitalize">
+            <h1 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center">
               {content.features.texts.titulo}
             </h1>
             <p className="max-w-3xl mx-auto mt-6 text-lg sm:text-xl text-fontDarker/85 font-secondFont text-center">
