@@ -39,19 +39,22 @@ export default function Cta() {
             </MotionDivDownToUp>
 
             <MotionDivDownToUp>
-              <h2 className="max-w-3xl mx-auto mt-6 text-3xl text-fontLighter font-mainFont lg:text-4xl">
+              <h2 className="max-w-3xl mx-auto mt-6 text-3xl text-fontLighter font-mainFont lg:text-4xl text-center">
                 {content.cta.texts.titulo}
               </h2>
             </MotionDivDownToUp>
 
-            <div className="max-w-3xl mx-auto mt-10 shadow-lg rounded-2xl deskt">
+            <div className="max-w-3xl mx-auto mt-10 shadow-lg rounded-2xl">
               <MotionDivDownToUp>
                 <div className="inline-block mb-16 text-left desktop1:max-w-[400px]">
                   <ul className="space-y-5">
                     {content.cta.pontos
                       .filter((ponto) => ponto.index !== 0)
                       .map((ponto) => (
-                        <li key={ponto.index} className="flex items-center">
+                        <li
+                          key={ponto.index}
+                          className="flex items-center text-justify"
+                        >
                           <svg
                             className="flex-shrink-0 w-6 h-6 text-lighter"
                             xmlns="http://www.w3.org/2000/svg"

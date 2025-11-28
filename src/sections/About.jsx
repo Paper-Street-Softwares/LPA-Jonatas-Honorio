@@ -9,7 +9,7 @@ export default function About() {
     <>
       <div className="bg-neutral-100 ">
         <SectionArea>
-          <div className="flex flex-col items-center max-w-7xl">
+          <div className="flex flex-col items-center max-w-7xl text-center">
             <SectionHeader
               title={content.about.texts.titulo}
               marginBottom="mb-0"
@@ -34,7 +34,10 @@ export default function About() {
                         {content.about.pontos
                           .filter((ponto) => ponto.index !== 0)
                           .map((ponto) => (
-                            <li key={ponto.index} className="flex items-start">
+                            <li
+                              key={ponto.index}
+                              className="flex items-start text-justify"
+                            >
                               <div className="flex-shrink-0">
                                 <svg
                                   className="w-6 h-6 text-darker"
