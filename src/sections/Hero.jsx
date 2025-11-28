@@ -50,7 +50,7 @@ export default function Hero({ imagemFocadaBackground }) {
             </h1>
           </MotionDivDownToUp>
           <MotionDivDownToUp>
-            <p className="max-w-3xl mx-auto mt-6 text-lg sm:text-xl text-fontLighter/85 font-secondFont">
+            <p className="max-w-3xl mx-auto mt-6 text-lg sm:text-xl text-fontLighter/85 font-secondFont text-justify">
               {content.hero.texts.subtitulo}
             </p>
           </MotionDivDownToUp>
