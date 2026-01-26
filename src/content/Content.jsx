@@ -8,21 +8,21 @@ import {
   FileX,
   MapPinHouse,
   MapPinX,
-} from "lucide-react";
-import imgLogo from "../assets/logo.webp";
-import imgHero from "../assets/hero.webp";
-import imgAbout from "../assets/about.webp";
-import imgBackground from "../assets/background.webp";
+} from 'lucide-react'
+import imgLogo from '../assets/logo.webp'
+import imgHero from '../assets/hero.webp'
+import imgAbout from '../assets/about.webp'
+import imgBackground from '../assets/background.webp'
 
 export const infos = {
   telefone: {
-    ddd: "83",
-    primeiraParte: "99902",
-    segundaParte: "7314",
+    ddd: '83',
+    primeiraParte: '99902',
+    segundaParte: '7314',
   },
   mensagemWhatsapp:
-    "Olá! Vim através do site e gostaria de tirar algumas dúvidas sobre meu caso.",
-};
+    'Olá! Vim através do site e gostaria de tirar algumas dúvidas sobre meu caso.',
+}
 
 const content = {
   hero: {
@@ -32,7 +32,7 @@ const content = {
       logo: imgLogo,
     },
     texts: {
-      etiqueta: "⚖️ Advogado Imobiliário",
+      etiqueta: '⚖️ Advogado Imobiliário',
       titulo: (
         <p>
           Problemas com imóveis, contratos ou locações? Eu
@@ -40,27 +40,26 @@ const content = {
         </p>
       ),
       subtitulo:
-        "Atendo corretores, imobiliárias, proprietários e compradores, com atuação focada em Direito Imobiliário: análise e blindagem de contratos, solução de conflitos, cancelamento de negócios abusivos e orientação clara em cada etapa da negociação ou do processo.",
-      labelBotaoPrincial: "Falar agora com o advogado no WhatsApp",
-      labelBotaoSecundario: "Agendar Horário",
+        'Atendo corretores, imobiliárias, proprietários e compradores, com atuação focada em Direito Imobiliário: análise e blindagem de contratos, solução de conflitos, cancelamento de negócios abusivos e orientação clara em cada etapa da negociação ou do processo.',
+      labelBotaoPrincial: 'Falar agora com o advogado no WhatsApp',
+      labelBotaoSecundario: 'Agendar Horário',
     },
   },
 
   features: {
     texts: {
-      titulo: "Cuido do seu caso com excelência",
-      subtitulo:
-        "Acompanhamento jurídico estratégico, com comunicação clara e atuação firme para resolver o que realmente importa: o seu problema imobiliário.",
-      labelBotaoPrincial: "Preciso de ajuda com meu caso",
+      titulo: 'Para quem é esse serviço',
+      subtitulo: 'Atuamos exclusivamente com:',
+      labelBotaoPrincial: 'Preciso de ajuda com meu caso',
     },
     cards: [
       {
         index: 1,
         icone: MapPinHouse,
-        titulo: "Para Corretores e Imobiliárias",
+        titulo: 'Imobiliárias',
         descricao:
-          "Suporte jurídico completo para o seu negócio: contratos blindados, prevenção de riscos, solução de conflitos, locações seguras e respaldo técnico para evitar prejuízos e litígios.",
-        labelBotaoModal: "Saiba mais",
+          'Segurança jurídica para vender mais, com menos riscos e mais credibilidade no mercado.',
+        labelBotaoModal: 'Saiba mais',
         textoModal: (
           <p>
             A_Definir
@@ -73,10 +72,10 @@ const content = {
       {
         index: 2,
         icone: FileText,
-        titulo: "Assessoria na Compra do Seu Imóvel",
+        titulo: 'Corretores de imóveis',
         descricao:
-          "Análise minuciosa de contratos, documentos e riscos. Eu verifico tudo — da matrícula ao histórico do vendedor — para garantir que você compre com total segurança e sem surpresas futuras.",
-        labelBotaoModal: "Saiba mais",
+          'Apoio jurídico estratégico para fechar negócios com tranquilidade e profissionalismo.',
+        labelBotaoModal: 'Saiba mais',
         textoModal: (
           <p>
             A_Definir
@@ -89,10 +88,10 @@ const content = {
       {
         index: 3,
         icone: MapPinX,
-        titulo: "Conflitos e Problemas Imobiliários",
+        titulo: 'Gestores imobiliários',
         descricao:
-          "Atuo em ações judiciais, notificações e negociações envolvendo locações, condomínio, contratos, vícios, cobranças indevidas e qualquer disputa imobiliária. Defendo seus direitos com técnica e precisão.",
-        labelBotaoModal: "Saiba mais",
+          'Decisões mais seguras, processos organizados e respaldo jurídico em cada etapa da gestão.',
+        labelBotaoModal: 'Saiba mais',
         textoModal: (
           <p>
             A_Definir
@@ -105,21 +104,14 @@ const content = {
       {
         index: 4,
         icone: FileX,
-        titulo: "Cancelamento de Multipropriedade, Timeshare e Cotas de Resort",
+        titulo: 'Equipes comerciais do mercado imobiliário',
         descricao: (
           <p>
-            Se você comprou uma cota de multipropriedade ou “vacation club” e
-            depois descobriu que não consegue usar, que a taxa é eterna ou que
-            as promessas não foram cumpridas, eu posso te ajudar.
-            <br />
-            <br />
-            Atuo no cancelamento jurídico dessas compras, análise do contrato,
-            identificação de abusos e recuperação de valores pagos. Avalio sua
-            situação, esclareço seus direitos e indico o caminho mais rápido e
-            seguro para sair desse compromisso que virou um peso financeiro.
+            Um jurídico que caminha junto com o time de vendas para acelerar
+            resultados e evitar problemas.
           </p>
         ),
-        labelBotaoModal: "Saiba mais",
+        labelBotaoModal: 'Saiba mais',
         textoModal: (
           <p>
             A_Definir
@@ -134,47 +126,47 @@ const content = {
 
   transformacao: {
     texts: {
-      titulo: "Te ajudo a ter segurança no mundo imobiliário",
-      labelBotaoPrincial: "Preciso da ajuda de um advogado",
+      titulo: 'Te ajudo a ter segurança no mundo imobiliário',
+      labelBotaoPrincial: 'Preciso da ajuda de um advogado',
     },
     antes: {
-      etiqueta: "ANTES",
+      etiqueta: 'ANTES',
       pontos: [
         {
           index: 1,
           texto:
-            "Você teme fazer um mau negócio porque não domina os detalhes jurídicos.",
+            'Você teme fazer um mau negócio porque não domina os detalhes jurídicos.',
         },
         {
           index: 2,
           texto:
-            "Fica inseguro ao assinar contratos sem saber se estão realmente corretos.",
+            'Fica inseguro ao assinar contratos sem saber se estão realmente corretos.',
         },
         {
           index: 3,
           texto:
-            "Compra, vende ou aluga imóvel com medo de cair em armadilhas, cláusulas abusivas ou problemas documentais.",
+            'Compra, vende ou aluga imóvel com medo de cair em armadilhas, cláusulas abusivas ou problemas documentais.',
         },
       ],
     },
 
     depois: {
-      etiqueta: "DEPOIS",
+      etiqueta: 'DEPOIS',
       pontos: [
         {
           index: 1,
           texto:
-            "Você negocia com segurança, sabendo exatamente o que está assinando e quais são seus direitos.",
+            'Você negocia com segurança, sabendo exatamente o que está assinando e quais são seus direitos.',
         },
         {
           index: 2,
           texto:
-            "Conta com meu apoio direto para tirar dúvidas, revisar documentos e prevenir riscos.",
+            'Conta com meu apoio direto para tirar dúvidas, revisar documentos e prevenir riscos.',
         },
         {
           index: 3,
           texto:
-            "Dorme tranquilo(a) porque contratos, documentos e riscos foram analisados por um advogado especialista em Direito Imobiliário.",
+            'Dorme tranquilo(a) porque contratos, documentos e riscos foram analisados por um advogado especialista em Direito Imobiliário.',
         },
       ],
     },
@@ -185,53 +177,33 @@ const content = {
       background: imgBackground,
     },
     texts: {
-      etiqueta: "Não espere nem mais um segundo",
+      etiqueta: 'Não espere nem mais um segundo',
 
       titulo: (
         <h2>
-          Cada minuto sem orientação jurídica pode colocar
-          <strong> seu imóvel ou seu dinheiro em risco!</strong>
+          Parcerias Jurídicas Profissionais
+          {/* <strong> seu imóvel ou seu dinheiro em risco!</strong> */}
         </h2>
       ),
-      labelBotaoPrincial: "Quero resolver agora mesmo",
+      labelBotaoPrincial:
+        'Entre em contato para conhecer o modelo de assessoria jurídica.',
     },
     pontos: [
       {
         index: 1,
-        texto: (
-          <p>
-            Atendimento para <strong>todo o Brasil</strong>
-          </p>
-        ),
+        texto: <p>Reduzir riscos</p>,
       },
       {
         index: 2,
-        texto: (
-          <p>
-            <strong> Analiso </strong>contratos, documentos e condições da
-            negociação antes que você assine qualquer coisa, evitando prejuízos
-            e surpresas futuras.
-          </p>
-        ),
+        texto: <p>Evitar processos</p>,
       },
       {
         index: 3,
-        texto: (
-          <p>
-            <strong>Identifico </strong>riscos ocultos e cláusulas abusivas que
-            podem gerar gastos inesperados, processos ou perda patrimonial.
-          </p>
-        ),
+        texto: <p>Estruturar contratos sólidos</p>,
       },
       {
         index: 4,
-        texto: (
-          <p>
-            <strong>Acompanho </strong>cada etapa da negociação para garantir
-            que você faça a melhor escolha, com segurança jurídica e orientação
-            clara.
-          </p>
-        ),
+        texto: <p>Ter suporte jurídico contínuo</p>,
       },
     ],
   },
@@ -241,8 +213,8 @@ const content = {
       imgPessoa: imgAbout,
     },
     texts: {
-      titulo: "Por que meus clientes confiam em mim",
-      labelBotaoPrincial: "Fale diretamente comigo",
+      titulo: 'Por que meus clientes confiam em mim',
+      labelBotaoPrincial: 'Fale diretamente comigo',
     },
     pontos: [
       {
@@ -252,7 +224,7 @@ const content = {
             <strong>
               Tenho mais de 10 anos de atuação na advocacia e já conduzi mais de
               500 processos,
-            </strong>{" "}
+            </strong>{' '}
             o que me permite antecipar riscos, enxergar soluções rápidas e saber
             exatamente como proteger você em situações complexas.
           </p>
@@ -262,7 +234,7 @@ const content = {
         index: 2,
         texto: (
           <p>
-            <strong>Sou pós-graduado em Direito Imobiliário, </strong> com
+            <strong>Sou pós-graduado em Direito Imobiliário,</strong> com
             formação específica para lidar com contratos, disputas, negociações
             e qualquer problema envolvendo imóveis.
           </p>
@@ -274,7 +246,7 @@ const content = {
           <p>
             <strong>
               Respondo rápido, porque sei que no mercado imobiliário tempo é
-              decisivo{" "}
+              decisivo{' '}
             </strong>
             e cada minuto pode significar uma perda ou uma oportunidade.
           </p>
@@ -308,17 +280,17 @@ const content = {
       background: imgBackground,
     },
     texts: {
-      etiqueta: "Chegou a hora de resolver seu problema imobiliário",
+      etiqueta: 'Chegou a hora de resolver seu problema imobiliário',
       titulo: (
         <h2>
           Entre em contato e vou fazer uma <strong>análise imediata</strong> do
           seu caso
         </h2>
       ),
-      labelBotaoPrincial: "Quero ser atendido agora",
+      labelBotaoPrincial: 'Quero ser atendido agora',
       direitosReservados:
-        "2025 • Dr. Jonatas Honorio • Todos os direitos reservados • ",
-      desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
+        '2025 • Dr. Jonatas Honorio • Todos os direitos reservados • ',
+      desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
       privacidade: (
         <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
           <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
@@ -344,7 +316,7 @@ const content = {
 
           <ul class="list-disc ml-6 mb-6 space-y-2">
             <li>
-              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
+              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{' '}
               órgão responsável pela fiscalização e aplicação da LGPD.
             </li>
 
@@ -552,9 +524,9 @@ const content = {
       ),
     },
     pontos: {
-      ponto1: "Profissionalismo",
-      ponto2: "Experiência",
-      ponto3: "Resultados",
+      ponto1: 'Profissionalismo',
+      ponto2: 'Experiência',
+      ponto3: 'Resultados',
     },
   },
 
@@ -591,6 +563,6 @@ const content = {
       </svg>
     ),
   },
-};
+}
 
-export default content;
+export default content

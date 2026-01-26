@@ -1,9 +1,9 @@
-import MotionDivDownToUp from "../components/animations/MotionDownToUp.jsx";
-import CtaButton from "../components/buttons/CtaButton";
-import CardFeatures from "../components/cards/CardFeatures";
-import SectionArea from "../components/sectionElements/SectionArea";
-import SectionHeader from "../components/sectionElements/SectionHeader.jsx";
-import content from "../content/Content";
+import MotionDivDownToUp from '../components/animations/MotionDownToUp.jsx'
+import CtaButton from '../components/buttons/CtaButton'
+import CardFeatures from '../components/cards/CardFeatures'
+import SectionArea from '../components/sectionElements/SectionArea'
+import SectionHeader from '../components/sectionElements/SectionHeader.jsx'
+import content from '../content/Content'
 
 export default function Features() {
   return (
@@ -28,15 +28,19 @@ export default function Features() {
                 ))}
             </div>
 
-            <CtaButton
+            {/* <CtaButton
               icon={content.util.svgWhatsapp}
               link={content.util.ctaWhatsapp}
               label={content.features.texts.labelBotaoPrincial}
               colorMode="dark"
-            />
+            /> */}
+            <p className="max-w-3xl mx-auto text-lg sm:text-xl text-fontDarker/85 font-secondFont text-justify">
+              📌 Não realizamos atendimentos avulsos para clientes finais. Nosso
+              foco é parceria jurídica profissional e contínua.
+            </p>
           </div>
         </SectionArea>
       </div>
     </>
-  );
+  )
 }
