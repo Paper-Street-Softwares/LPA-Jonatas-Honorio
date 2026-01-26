@@ -13,12 +13,12 @@ function TrainingSection() {
           <div className="container max-w-7xl mx-auto">
             <MotionDivDownToUp className="flex flex-col lg:flex-row items-center gap-16">
               <MotionDivDownToUp className="lg:w-1/2 space-y-8">
-                <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/20 mx-auto desktop1:mx-0 w-fit">
+                {/* <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/20 mx-auto desktop1:mx-0 w-fit">
                   <GraduationCap className="w-5 h-5 text-primary" />
                   <span className="text-primary text-sm font-semibold uppercase tracking-wider font-secondFont">
                     Formação
                   </span>
-                </div>
+                </div> */}
 
                 <h2 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center desktop1:text-start">
                   Formação Jurídica para Corretores e Imobiliárias
