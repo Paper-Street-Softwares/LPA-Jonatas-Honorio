@@ -23,6 +23,9 @@ function PartnershipSection() {
                 <h2 className="text-3xl md:text-5xl font-mainFont font-bold text-black">
                   Como funciona a <span className="text-dark">parceria</span>
                 </h2>
+                <div
+                  className={`w-full h-px max-w-6xl mx-auto mt-6 mb-6 lg:mb-12 bg-custom-divider-lighter`}
+                ></div>
                 <div className="h-1 w-20 bg-dark mx-auto rounded-full" />
               </MotionDivDownToUp>
 

@@ -25,6 +25,9 @@ function ServicesSection() {
                   Contrato mensal de acompanhamento jurídico preventivo e
                   estratégico.
                 </p>
+                <div
+                  className={`w-full h-px max-w-6xl mx-auto mt-6 mb-6 lg:mb-12 bg-custom-divider-lighter`}
+                ></div>
               </MotionDivDownToUp>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-secondFont">
