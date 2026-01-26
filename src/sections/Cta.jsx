@@ -1,7 +1,7 @@
-import MotionDivDownToUp from "../components/animations/MotionDownToUp.jsx";
-import CtaButton from "../components/buttons/CtaButton";
-import SectionArea from "../components/sectionElements/SectionArea";
-import content from "../content/Content";
+import MotionDivDownToUp from '../components/animations/MotionDownToUp.jsx'
+import CtaButton from '../components/buttons/CtaButton'
+import SectionArea from '../components/sectionElements/SectionArea'
+import content from '../content/Content'
 
 export default function Cta() {
   return (
@@ -47,6 +47,9 @@ export default function Cta() {
             <div className="max-w-3xl mx-auto mt-10 shadow-lg rounded-2xl">
               <MotionDivDownToUp>
                 <div className="inline-block mb-16 text-left desktop1:max-w-[400px]">
+                  <p className="font-secondFont text-white/80 mb-4">
+                    Se você busca:
+                  </p>
                   <ul className="space-y-5">
                     {content.cta.pontos
                       .filter((ponto) => ponto.index !== 0)
@@ -88,5 +91,5 @@ export default function Cta() {
         </SectionArea>
       </div>
     </>
-  );
+  )
 }

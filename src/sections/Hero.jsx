@@ -1,6 +1,6 @@
-import content from "../content/Content";
-import MotionDivDownToUp from "../components/animations/MotionDownToUp.jsx";
-import CtaButton from "../components/buttons/CtaButton";
+import content from '../content/Content'
+import MotionDivDownToUp from '../components/animations/MotionDownToUp.jsx'
+import CtaButton from '../components/buttons/CtaButton'
 
 export default function Hero({ imagemFocadaBackground }) {
   return (
@@ -12,12 +12,12 @@ export default function Hero({ imagemFocadaBackground }) {
             alt="Imagem ilustrativa"
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-black/80 lg:bg-black/75"></div>
+          <div className="absolute inset-0 bg-black/90 lg:bg-black/85"></div>
         </div>
 
         <div
           className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 sm:pt-16 md:pt-28 ${
-            imagemFocadaBackground && "lg:pt-10"
+            imagemFocadaBackground && 'lg:pt-10'
           } lg:pb-28 text-center text-fontLighter`}
         >
           {/* <MotionDivDownToUp>
@@ -35,7 +35,7 @@ export default function Hero({ imagemFocadaBackground }) {
                 style={{
                   backgroundImage: `url(${content.hero.imagens.focadaHero})`,
                 }}
-                className="bg-center bg-no-repeat bg-cover h-[400px] w-[450px] md:h-[600px] md:w-[600px] lg:h-[500px] lg:w-[500px]"
+                className="bg-center bg-no-repeat bg-contain h-[400px] w-[450px] md:h-[600px] md:w-[600px] lg:h-[500px] lg:w-[500px]"
               />
             </MotionDivDownToUp>
           )}
@@ -89,5 +89,5 @@ export default function Hero({ imagemFocadaBackground }) {
         </div>
       </div>
     </>
-  );
+  )
 }
