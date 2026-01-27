@@ -11,6 +11,8 @@ import {
 } from 'lucide-react'
 import content from '../content/Content'
 import CtaButton from '../components/buttons/CtaButton'
+import { ArrowBigDown } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 
 function PartnershipSection() {
   return (
@@ -64,22 +66,27 @@ function PartnershipSection() {
                 ].map((item, i) => (
                   <MotionDivDownToUp key={i} className="relative group">
                     <div className="p-6 rounded-xl border border-black/5 hover:border-dark/50 text-center h-full flex flex-col items-center hover:border-lighter cursor-pointer scale-105 transition-all duration-500 max-w-[200px] lg:max-w-[160px] xl:max-w-[200px]">
-                      <div className="w-12 h-12 rounded-full bg-dark flex items-center justify-center text-xl font-bold mb-4">
+                      <div className="w-12 h-12 rounded-full bg-dark flex items-center justify-center text-xl font-bold mb-4 text-black/50">
                         {item.step}
                       </div>
-                      <item.icon className="w-8 h-8 text-dark mb-3" />
+                      <item.icon className="w-8 h-8 text-lighter mb-3" />
                       <h3 className="font-bold font-display text-black mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground">
-                        {item.desc}
-                      </p>
+                      <p className="text-sm text-black/60">{item.desc}</p>
+                      {i < 4 && (
+                        <span className="p-1 rounded-full bg-white border absolute -right-6 top-28 z-10 hidden min-[490px]:inline-flex">
+                          <ArrowRight className="text-lighter" />
+                        </span>
+                      )}
+                      {i < 4 && (
+                        <span
+                          className={`p-1 rounded-full bg-white border absolute -bottom-6 z-10 hidden max-[489px]:inline-flex`}
+                        >
+                          <ArrowDown className="text-lighter" />
+                        </span>
+                      )}
                     </div>
-                    {/* {i < 4 && (
-                      <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
-                        <ArrowRight className="w-6 h-6 text-dark/50" />
-                      </div>
-                    )} */}
                   </MotionDivDownToUp>
                 ))}
               </div>

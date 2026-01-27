@@ -33,7 +33,7 @@ function TrainingSection() {
                   <p className="text-primary font-semibold mb-4">
                     Temas abordados:
                   </p>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-fontDarker/85">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-fontDarker/85 text-start">
                     {[
                       'Contratos imobiliários na prática',
                       'Locações sem risco jurídico',
@@ -42,10 +42,7 @@ function TrainingSection() {
                       'Leitura e interpretação contratual',
                       'Erros jurídicos que mais geram processos',
                     ].map((item, i) => (
-                      <li
-                        key={i}
-                        className="flex items-start gap-2 text-muted-foreground"
-                      >
+                      <li key={i} className="flex items-start gap-2 ">
                         <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
                         <span>{item}</span>
                       </li>
@@ -68,7 +65,7 @@ function TrainingSection() {
                     <h3 className="text-2xl font-display font-bold text-black">
                       Capacite sua equipe
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="">
                       Treinamentos personalizados para sua imobiliária
                     </p>
                     <CtaButton
