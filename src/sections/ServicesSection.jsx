@@ -6,7 +6,7 @@ import SectionHeader from '../components/sectionElements/SectionHeader'
 
 function ServicesSection() {
   return (
-    <div className="text-justify">
+    <div className="">
       <SectionArea>
         {' '}
         <section className="bg-secondary/20 relative">
@@ -18,9 +18,9 @@ function ServicesSection() {
               className="space-y-16"
             >
               <MotionDivDownToUp className="text-center space-y-4">
-                <h2 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center">
+                <h1 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center">
                   O que fazemos
-                </h2>
+                </h1>
                 <p className="max-w-3xl mx-auto mt-6 text-lg sm:text-xl text-fontDarker/85 font-secondFont text-center">
                   Contrato mensal de acompanhamento jurídico preventivo e
                   estratégico.
@@ -40,9 +40,9 @@ function ServicesSection() {
                       strokeWidth={1.5}
                     />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-display text-black">
+                  <h1 className="text-xl font-bold mb-3 text-black">
                     Assessoria Jurídica Contínua para Imobiliárias
-                  </h3>
+                  </h1>
                   <p className="text-fontDarker/70 mb-4">
                     Contrato mensal de acompanhamento jurídico preventivo e
                     estratégico.
@@ -79,9 +79,9 @@ function ServicesSection() {
                       strokeWidth={1.5}
                     />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-display text-black">
+                  <h1 className="text-xl font-bold mb-3 text-black">
                     Consultoria Jurídica Estratégica
-                  </h3>
+                  </h1>
                   <p className="text-fontDarker/70 mb-4">
                     Atuação consultiva para gestores e proprietários de
                     imobiliárias.
@@ -113,9 +113,9 @@ function ServicesSection() {
                       strokeWidth={1.5}
                     />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-display text-black">
+                  <h1 className="text-xl font-bold mb-3 text-black">
                     Direito Imobiliário Aplicado à Prática
-                  </h3>
+                  </h1>
                   <p className="text-fontDarker/70 mb-4">
                     Nada de teoria distante da realidade.
                   </p>

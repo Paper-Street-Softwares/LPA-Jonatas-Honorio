@@ -1,84 +1,125 @@
 import React from 'react'
 import SectionArea from '../components/sectionElements/SectionArea'
 import MotionDivDownToUp from '../components/animations/MotionDownToUp'
-import { GraduationCap, CheckCircle2, ArrowRight } from 'lucide-react'
+import {
+  GraduationCap,
+  ArrowRight,
+  ShieldCheck,
+  Scale,
+  FileCheck,
+} from 'lucide-react'
 import CtaButton from '../components/buttons/CtaButton'
 import content from '../content/Content'
+import SectionHeader from '../components/sectionElements/SectionHeader'
+import { motion } from 'framer-motion'
+import { Check } from 'lucide-react'
 
 function TrainingSection() {
+  const listFeatures = Object.values({
+    card1: {
+      icon: <Check />,
+      text: 'Contratos imobiliários na prática',
+    },
+    card2: {
+      icon: <Check />,
+      text: 'Locações sem risco jurídico',
+    },
+    card3: {
+      icon: <Check />,
+      text: 'Repasses e cessões com segurança',
+    },
+    card4: {
+      icon: <Check />,
+      text: 'Como evitar nulidades e prejuízos',
+    },
+    card5: {
+      icon: <Check />,
+      text: 'Leitura e interpretação contratual',
+    },
+    card6: {
+      icon: <Check />,
+      text: 'Erros jurídicos que mais geram processos',
+    },
+  })
+
+  // 🎓 Conteúdo prático, direto e baseado em casos reais.
+
   return (
     <div className="bg-neutral-100 text-justify">
       <SectionArea>
-        <section className="relative">
-          <div className="container max-w-7xl mx-auto">
-            <MotionDivDownToUp className="flex flex-col lg:flex-row items-center gap-16">
-              <MotionDivDownToUp className="lg:w-1/2 space-y-8">
-                {/* <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/20 mx-auto desktop1:mx-0 w-fit">
-                  <GraduationCap className="w-5 h-5 text-primary" />
-                  <span className="text-primary text-sm font-semibold uppercase tracking-wider font-secondFont">
-                    Formação
-                  </span>
-                </div> */}
-
-                <h2 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center desktop1:text-start">
-                  Formação Jurídica para Corretores e Imobiliárias
-                </h2>
-
-                <p className="max-w-3xl mx-auto mt-6 text-lg sm:text-xl text-fontDarker/85 font-secondFont text-center desktop1:text-start">
-                  Cursos e treinamentos voltados para quem atua na linha de
-                  frente do mercado imobiliário.
-                </p>
-
-                <div className="p-6 rounded-lg border border-white/5 font-secondFont">
-                  <p className="text-primary font-semibold mb-4">
-                    Temas abordados:
-                  </p>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-fontDarker/85 text-start">
-                    {[
-                      'Contratos imobiliários na prática',
-                      'Locações sem risco jurídico',
-                      'Repasses e cessões com segurança',
-                      'Como evitar nulidades e prejuízos',
-                      'Leitura e interpretação contratual',
-                      'Erros jurídicos que mais geram processos',
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 ">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-primary/10 border border-primary/20">
-                  <GraduationCap className="w-6 h-6 text-primary" />
-                  <p className="text-black font-medium font-secondFont">
-                    Conteúdo prático, direto e baseado em casos reais.
-                  </p>
-                </div>
-              </MotionDivDownToUp>
-
-              <MotionDivDownToUp className="lg:w-1/2 relative font-secondFont">
-                <div className="relative z-10 overflow-hidden border border-white/10 shadow-2xl bg-gradient-to-br from-primary/20 to-secondary/50 p-12">
-                  <div className="text-center space-y-8">
-                    <GraduationCap className="w-24 h-24 text-primary mx-auto" />
-                    <h3 className="text-2xl font-display font-bold text-black">
-                      Capacite sua equipe
-                    </h3>
-                    <p className="">
-                      Treinamentos personalizados para sua imobiliária
-                    </p>
-                    <CtaButton
-                      label="Solicitar Treinamento"
-                      icon={<ArrowRight className="ml-2 h-5 w-5" />}
-                      link={content.util.ctaWhatsapp}
-                    />
-                  </div>
-                </div>
-              </MotionDivDownToUp>
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <MotionDivDownToUp>
+              <h1 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center">
+                Formação Jurídica para Corretores e Imobiliárias
+              </h1>
+              <p className="max-w-3xl mx-auto mt-6 text-lg sm:text-xl text-fontDarker/85 font-secondFont text-center">
+                Cursos e treinamentos voltados para quem atua na linha de frente
+                do mercado imobiliário.
+              </p>
+              <div
+                className={`w-full h-px max-w-6xl mx-auto mt-6 bg-custom-divider-lighter`}
+              ></div>
             </MotionDivDownToUp>
           </div>
-        </section>
+
+          <MotionDivDownToUp className="mt-8 justify-evenly font-secondFont relative overflow-hidden rounded-sm bg-white w-full max-w-[800px] mx-auto px-4 py-4 shadow-lg sm:px-8 md:flex lg:gap-x-20 lg:px-20">
+            {/* Accent line */}
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent via-yellow-500 to-accent" />
+
+            <div className="mx-auto md:mx-0 max-w-md text-center lg:mx-0 lg:flex-auto lg:text-left">
+              <div className="flex flex-col md:flex-row justify-center gap-4 lg:justify-start mb-6">
+                <div className="bg-white/10 w-fit h-fit mx-autp md:mx-0 p-3 rounded-xl backdrop-blur-sm border-2 border-lighter">
+                  <GraduationCap className="h-8 w-8 text-accent" />
+                </div>
+                <h1 className="font-mainFont text-title1 font-bold tracking-tight leading-6 md:text-start">
+                  {' '}
+                  Conteúdo prático, direto e baseado em casos reais.
+                </h1>
+              </div>
+
+              {listFeatures.map((item, index) => (
+                <div className="flex justify-center md:justify-start">
+                  <div key={index} className="flex gap-2 text-start ">
+                    <span>{item.icon}</span>
+                    <p>{item.text}</p>
+                  </div>
+                </div>
+              ))}
+
+              <div className="mt-10 flex items-center justify-center gap-x-6 md:justify-start">
+                <CtaButton
+                  label="Fale com um Especialista"
+                  icon={<ArrowRight className="w-4 h-4" />}
+                  link={content.util.ctaWhatsapp}
+                  colorMode="light"
+                />
+              </div>
+            </div>
+
+            <div className="relative mt-4 h-80 lg:mt-8 min-w-[200px] flex items-center justify-center lg:h-auto ">
+              <div className="absolute w-[300px] h-[300px] bg-accent/20 rounded-full blur-[100px]" />
+              <div className="relative z-10 bg-darker backdrop-blur-md rounded-lg p-8 border border-white/10 max-w-sm rotate-3 hover:rotate-0 transition-all duration-500 shadow-lg">
+                <div className="h-2 w-20 bg-accent/60 rounded mb-4" />
+                <div className="h-2 w-full bg-white/70 rounded mb-2" />
+                <div className="h-2 w-full bg-white/70 rounded mb-2" />
+                <div className="h-2 w-3/4 bg-white/70 rounded mb-6" />
+
+                <div className="h-2 w-full bg-white/70 rounded mb-2" />
+                <div className="h-2 w-5/6 bg-white/70 rounded mb-2" />
+
+                <div className="mt-8 flex items-center gap-0">
+                  <div className="h-10 w-10 rounded-full bg-accent/80 flex items-center justify-center font-bold text-white text-lg">
+                    ✓
+                  </div>
+                  <div className="text-sm text-white font-medium">
+                    Conteúdo Validado
+                  </div>
+                </div>
+              </div>
+            </div>
+          </MotionDivDownToUp>
+        </div>
       </SectionArea>
     </div>
   )

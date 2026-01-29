@@ -35,12 +35,12 @@ const content = {
       etiqueta: '⚖️ Advogado Imobiliário',
       titulo: (
         <p>
-          Problemas com imóveis, contratos ou locações? Eu
-          <strong> resolvo </strong>para você.
+          Advocacia Imobiliária
+          <strong> Estratégica </strong>para Imobiliárias e Corretores
         </p>
       ),
       subtitulo:
-        'Atendo corretores, imobiliárias, proprietários e compradores, com atuação focada em Direito Imobiliário: análise e blindagem de contratos, solução de conflitos, cancelamento de negócios abusivos e orientação clara em cada etapa da negociação ou do processo.',
+        'Assessoria jurídica contínua, contratos seguros e suporte técnico para reduzir riscos, evitar litígios e fortalecer a operação imobiliária. Tenha um setor jurídico da sua imobiliária, temos planos para assessoria e consultoria contínua.',
       labelBotaoPrincial: 'Falar agora com o advogado no WhatsApp',
       labelBotaoSecundario: 'Agendar Horário',
     },

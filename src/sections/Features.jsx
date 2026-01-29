@@ -34,10 +34,10 @@ export default function Features() {
               label={content.features.texts.labelBotaoPrincial}
               colorMode="dark"
             /> */}
-            <p className="max-w-3xl mx-auto text-lg sm:text-xl text-fontDarker/85 font-secondFont text-justify">
+            {/* <p className="max-w-3xl mx-auto text-lg sm:text-xl text-fontDarker/85 font-secondFont text-justify">
               📌 Não realizamos atendimentos avulsos para clientes finais. Nosso
               foco é parceria jurídica profissional e contínua.
-            </p>
+            </p> */}
           </div>
         </SectionArea>
       </div>

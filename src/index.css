@@ -1,5 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Bookman;
+  src: url(../src/fonts/Bookman_Old_Style/BOOKOS.TTF) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DavidLibre;
+  src: url(../src/fonts/DavidLibre/DavidLibre-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DavidLibre;
+  src: url(../src/fonts/DavidLibre/DavidLibre-Medium.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DavidLibre;
+  src: url(../src/fonts/DavidLibre/DavidLibre-Regular.ttf) format('truetype');
+  font-weight: 300;
+  font-style: light;
+  font-display: swap;
+}
