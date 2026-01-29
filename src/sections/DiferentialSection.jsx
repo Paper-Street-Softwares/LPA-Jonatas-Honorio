@@ -6,14 +6,14 @@ import { Check, CheckCircle2, Handshake } from 'lucide-react'
 function DiferentialSection() {
   return (
     <div className="text-justify">
-      <SectionArea>
-        <section className="bg-gradient-to-b from-secondary/30 to-background">
-          <div className="container w-full mx-auto">
-            <MotionDivDownToUp className="flex flex-col lg:flex-row justify-between items-start max-w-7xl gap-12">
+      <SectionArea className={``}>
+        <section className=" w-[90%] max-w-[1280px]">
+          <div className="">
+            <MotionDivDownToUp className="flex flex-col lg:flex-row justify-between items-center gap-12">
               <MotionDivDownToUp className="lg:w-1/2 space-y-8">
-                <h2 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center desktop1:text-start">
+                <h1 className="font-mainFont text-3xl font-bold tracking-tight lg:text-4xl text-center phone3:text-start">
                   Nossos <span className="text-primary">Diferenciais</span>
-                </h2>
+                </h1>
 
                 <ul className="space-y-4 font-secondFont text-fontDarker/70">
                   {[
@@ -42,9 +42,9 @@ function DiferentialSection() {
                 <div className="p-10 shadow-2xl shadow-primary/10">
                   <div className="space-y-6">
                     <Handshake className="w-16 h-16 text-primary" />
-                    <h3 className="text-2xl md:text-3xl font-display font-bold font-secondFont">
+                    <h1 className="text-2xl md:text-3xl font-display font-bold font-secondFont">
                       Você não contrata apenas um advogado.
-                    </h3>
+                    </h1>
                     <p className="text-xl text-primary font-medium text-fontDarker/70">
                       Contrata um jurídico que entende sua operação.
                     </p>
