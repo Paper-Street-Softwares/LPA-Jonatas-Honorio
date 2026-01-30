@@ -4,11 +4,15 @@ import MotionDivDownToUp from '../components/animations/MotionDownToUp'
 import {
   ArrowRight,
   ClipboardCheck,
-  Settings,
   Users,
   Shield,
   TrendingUp,
   ArrowDown,
+  Search,
+  Lightbulb,
+  BarChart3,
+  Settings,
+  Target,
 } from 'lucide-react'
 import content from '../content/Content'
 import CtaButton from '../components/buttons/CtaButton'
@@ -16,38 +20,39 @@ import CtaButton from '../components/buttons/CtaButton'
 function PartnershipSection() {
   const steps = [
     {
-      step: '1',
+      number: '01',
       title: 'Diagnóstico',
-      desc: 'Diagnóstico da operação imobiliária',
-      icon: ClipboardCheck,
-      rodape: 'Próximo: 2',
+      description: 'Diagnóstico da operação imobiliária',
+      icon: Search,
+      color: 'bg-darker',
     },
     {
-      step: '2',
+      number: '02',
       title: 'Definição',
-      desc: 'Definição do modelo de assessoria (mensal)',
-      icon: Settings,
-      rodape: 'Próximo: 3',
+      description: 'Definição do modelo de assessoria (mensal)',
+      icon: Lightbulb,
+      color: 'bg-darker',
     },
     {
-      step: '3',
+      number: '03',
       title: 'Atuação',
-      desc: 'Atuação contínua junto à equipe',
-      icon: Users,
-      rodape: 'Próximo: 4',
+      description: 'Atuação contínua junto à equipe.',
+      icon: BarChart3,
+      color: 'bg-darker',
     },
     {
-      step: '4',
+      number: '04',
       title: 'Suporte',
-      desc: 'Suporte jurídico permanente',
-      icon: Shield,
-      rodape: 'Próximo: 5',
+      description: 'Suporte jurídico permanente.',
+      icon: Settings,
+      color: 'bg-darker',
     },
     {
-      step: '5',
+      number: '05',
       title: 'Evolução',
-      desc: 'Atualizações, ajustes e orientação estratégica',
-      icon: TrendingUp,
+      description: 'Atualizações, ajustes e orientação estratégica',
+      icon: Target,
+      color: 'bg-darker',
     },
   ]
 
@@ -66,45 +71,41 @@ function PartnershipSection() {
                 <div className="h-1 w-20 bg-dark mx-auto rounded-full" />
               </MotionDivDownToUp>
 
-              {/* Cards */}
-              <div className="flex flex-wrap gap-6 justify-center font-secondFont">
-                {steps.map((item, i) => (
-                  <MotionDivDownToUp key={i} className="relative">
-                    {/* CARD */}
-                    <div className="relative z-10 p-6 rounded-sm border border-black/5 hover:border-dark/50 text-center h-full flex flex-col items-center shadow-lg bg-white scale-105 transition-all duration-500 max-w-[200px] lg:max-w-[170px] xl:max-w-[200px]">
-                      <div className="rounded-full bg-dark flex items-center justify-center text-xl font-bold mb-2 text-black/50">
-                        {item.step}
-                      </div>
+              <section className="w-full">
+                <div className="max-w-7xl mx-auto px-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-16">
+                    {steps.map((step, index) => {
+                      const Icon = step.icon
 
-                      <item.icon className="w-8 h-8 text-lighter mb-3" />
+                      return (
+                        <div
+                          key={index}
+                          className="relative bg-white sm:max-w-[300px] rounded-sm shadow-md px-6 pt-14 pb-6 text-center font-secondFont"
+                        >
+                          {/* Seta superior */}
+                          <div
+                            className={`absolute -top-4 left-1/2 -translate-x-1/2 w-[90%] h-12 ${step.color} text-white font-bold text-2xl flex items-center justify-center clip-arrow`}
+                          >
+                            {step.number}
+                          </div>
 
-                      <h3 className="font-bold font-display text-black mb-2">
-                        {item.title}
-                      </h3>
+                          <h3 className="mt-4 font-semibold text-lg text-darker">
+                            {step.title}
+                          </h3>
 
-                      <p className="text-sm text-black/60 mb-6">{item.desc}</p>
+                          <p className="mt-3 text-sm text-gray-500 leading-relaxed">
+                            {step.description}
+                          </p>
 
-                      <span className="font-secondFont absolute bottom-0 text-[12px] mb-5 text-darker">
-                        {item.rodape}
-                      </span>
-                    </div>
-
-                    {/* SETA DESKTOP */}
-                    {/* {i < steps.length - 1 && (
-                      <span className="pointer-events-none absolute -right-6 top-1/2 -translate-y-1/2 z-40 hidden min-[490px]:inline-flex p-1 rounded-full bg-white border">
-                        <ArrowRight className="text-lighter" />
-                      </span>
-                    )} */}
-
-                    {/* SETA MOBILE */}
-                    {/* {i < steps.length - 1 && (
-                      <span className="pointer-events-none absolute left-1/2 -translate-x-1/2 -bottom-6 z-40 hidden max-[489px]:inline-flex p-1 rounded-full bg-white border">
-                        <ArrowDown className="text-lighter" />
-                      </span>
-                    )} */}
-                  </MotionDivDownToUp>
-                ))}
-              </div>
+                          <div className="mt-8 flex justify-center">
+                            <Icon className="w-8 h-8 text-darker" />
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              </section>
 
               {/* CTA */}
               <MotionDivDownToUp className="text-center">
