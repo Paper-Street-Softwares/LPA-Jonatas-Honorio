@@ -20,24 +20,28 @@ function PartnershipSection() {
       title: 'Diagnóstico',
       desc: 'Diagnóstico da operação imobiliária',
       icon: ClipboardCheck,
+      rodape: 'Próximo: 2',
     },
     {
       step: '2',
       title: 'Definição',
       desc: 'Definição do modelo de assessoria (mensal)',
       icon: Settings,
+      rodape: 'Próximo: 3',
     },
     {
       step: '3',
       title: 'Atuação',
       desc: 'Atuação contínua junto à equipe',
       icon: Users,
+      rodape: 'Próximo: 4',
     },
     {
       step: '4',
       title: 'Suporte',
       desc: 'Suporte jurídico permanente',
       icon: Shield,
+      rodape: 'Próximo: 5',
     },
     {
       step: '5',
@@ -67,8 +71,8 @@ function PartnershipSection() {
                 {steps.map((item, i) => (
                   <MotionDivDownToUp key={i} className="relative">
                     {/* CARD */}
-                    <div className="relative z-10 p-6 rounded-sm border border-black/5 hover:border-dark/50 text-center h-full flex flex-col items-center shadow-lg bg-white scale-105 transition-all duration-500 max-w-[200px] lg:max-w-[160px] xl:max-w-[200px]">
-                      <div className="w-12 h-12 rounded-full bg-dark flex items-center justify-center text-xl font-bold mb-4 text-black/50">
+                    <div className="relative z-10 p-6 rounded-sm border border-black/5 hover:border-dark/50 text-center h-full flex flex-col items-center shadow-lg bg-white scale-105 transition-all duration-500 max-w-[200px] lg:max-w-[170px] xl:max-w-[200px]">
+                      <div className="rounded-full bg-dark flex items-center justify-center text-xl font-bold mb-2 text-black/50">
                         {item.step}
                       </div>
 
@@ -78,22 +82,26 @@ function PartnershipSection() {
                         {item.title}
                       </h3>
 
-                      <p className="text-sm text-black/60">{item.desc}</p>
+                      <p className="text-sm text-black/60 mb-6">{item.desc}</p>
+
+                      <span className="font-secondFont absolute bottom-0 text-[12px] mb-5 text-darker">
+                        {item.rodape}
+                      </span>
                     </div>
 
                     {/* SETA DESKTOP */}
-                    {i < steps.length - 1 && (
+                    {/* {i < steps.length - 1 && (
                       <span className="pointer-events-none absolute -right-6 top-1/2 -translate-y-1/2 z-40 hidden min-[490px]:inline-flex p-1 rounded-full bg-white border">
                         <ArrowRight className="text-lighter" />
                       </span>
-                    )}
+                    )} */}
 
                     {/* SETA MOBILE */}
-                    {i < steps.length - 1 && (
+                    {/* {i < steps.length - 1 && (
                       <span className="pointer-events-none absolute left-1/2 -translate-x-1/2 -bottom-6 z-40 hidden max-[489px]:inline-flex p-1 rounded-full bg-white border">
                         <ArrowDown className="text-lighter" />
                       </span>
-                    )}
+                    )} */}
                   </MotionDivDownToUp>
                 ))}
               </div>
